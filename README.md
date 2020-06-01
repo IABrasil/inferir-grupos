@@ -1,0 +1,1 @@
+Exemplo de treinamento supervisionado e não supervisionado para reconhecimento de clusters de visitas para otimização de frete.
