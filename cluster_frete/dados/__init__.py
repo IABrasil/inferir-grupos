@@ -1,0 +1,1 @@
+from cluster_frete.dados.loader import load_dataset_for_supervised
