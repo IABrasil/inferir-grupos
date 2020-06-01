@@ -2,7 +2,7 @@ import tensorflow as tf
 from cluster_frete.classifier_model import ClassifierModel
 
 
-def sigmoin_loss(logits, labels):
+def sigmoid_loss(logits, labels):
     return tf.compat.v1.losses.sigmoid_cross_entropy(labels, logits)
 
 
@@ -11,7 +11,7 @@ def training_step(model, features, labels, optimizer):
         tape.watch(model.trainable_variables)
         predicted = model(features, training=True)
 
-        loss = sigmoind_loss(predicted, labels)
+        loss = sigmoid_loss(predicted, labels)
 
     gradients = tape.gradient(loss, model.trainable_variables)
     optimizer.apply_gradients(zip(gradients, model.trainable_variables))

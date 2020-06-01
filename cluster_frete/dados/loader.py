@@ -2,6 +2,7 @@ import os
 
 import tensorflow as tf
 
+COLUMN_NAMES = ["frete", "preco", "prazo", "latitude", "longitude", "grupo1", "grupo0"]
 
 def _prepare_supervised(row):
     frete = row["frete"]
