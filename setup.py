@@ -10,7 +10,7 @@ setup(
     author_email='',
     description='',
     install_requires=[
-        "tensorflow==2.1.0"
+        "tensorflow==2.3.1"
     ],
     entry_points={
         'console_scripts': [
